@@ -1,2 +1,2 @@
 # DecisionMaker
- A Blazor app to let my partner and I outsource our decisions
+ A Blazor app to let my partner and me outsource our decisions
