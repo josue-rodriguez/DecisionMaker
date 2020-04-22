@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "DecisionMaker.dll": "sha256-6kLyaGh\/z2VOiNq6L4dPEEtDYY2JKwEkqb8TSbyq8Zc=",
+      "DecisionMaker.dll": "sha256-1thD8u0uGyKMSMsy\/c4dn8HggDstpJ7lSBS5Oo5fuUU=",
       "System.Net.Http.Json.dll": "sha256-mfk4mGJNEuOK1ya6HNucfAmophVZxc+JZZGUjS6Ch2g=",
       "System.Buffers.dll": "sha256-ZxXy75PYbzJxNfAc\/SAP1nUYm4gt1jSaOpFnBb9m85M=",
       "mscorlib.dll": "sha256-\/wH+cZ4GWv76l2ip\/cTl2COsQjLmNljfkZi4H9zaHBc=",
@@ -60,7 +60,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-UHHbIPOST1VljxOGBjumdiXVIX1msdTpgJldZgWTemo="
     },
     "pdb": {
-      "DecisionMaker.pdb": "sha256-pCfRaZVaDFm+nFUL6lu44vPp29hX6EQCMaOMQJneDXk="
+      "DecisionMaker.pdb": "sha256-2Nom+03t7G3ek34+oPp\/TdK8uOewW0Kq7TH\/CZVAxrQ="
     },
     "runtime": {
       "dotnet.3.2.0-preview5.20210.1.js": "sha256-\/uExEU5ECP+u0FDAudLlva53SiNUut4PPcG9xnAVikc=",

@@ -194,6 +194,7 @@ app {
         color: white;
     }
 .btn-remove {
+    position: relative;
     color: black;
     background-color: white;
     border: 2px solid #F44336;
@@ -205,7 +206,18 @@ app {
         background-color: #F44336;
         color: white;
     }
+.btn-choose {
+    color: black;
+    background-color: white;
+    border: 2px solid #D3D3D3;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
 
+.btn-choose:hover {
+    background-color: #D3D3D3;
+    color: white;
+}
 .input-josue {
     border: 2px solid #D3D3D3;
     border-radius: 4px;

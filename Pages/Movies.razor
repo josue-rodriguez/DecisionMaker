@@ -6,7 +6,7 @@
     {
     <li>
         <!--<input @bind="movie.Title" />-->
-        <span>@movie.Title</span>
+        <input class="input-josue" @bind="movie.Title"/>
         <button class="btn-remove" @onclick="(() => RemoveMovie(movie.Title))">x</button>
     </li>
     }
@@ -16,21 +16,33 @@
 <input class="input-josue" placeholder="e.g., The Room" @bind-value="newMovie" @bind-value:event="oninput" @onkeyup="AddMovieOnEnter" />
 <button class="btn-add" @onclick="AddMovie">Add movie</button>
 
+<hr />
+<button class="btn-choose" @onclick="ChooseMovie">Decide a Movie</button>
+<br />
+<span style="font-size: 24px">@chosenMovie</span>
+
 @code {
     // Field to maintain the state of the list
     public IList<DecisionItem> movies = new List<DecisionItem>();
     // String to bind to text input
     private string newMovie;
+    private string chosenMovie;
+    static Random rnd = new Random();
 
     // Method for adding movies on click
     private void AddMovie()
     {
-        if (!string.IsNullOrWhiteSpace(newMovie))
+        bool isNewMovie = !movies.Any(movie => movie.Title == newMovie);
+        bool isNotEmpty = !string.IsNullOrWhiteSpace(newMovie);
+
+        if (isNewMovie & isNotEmpty)
         {
             movies.Add(new DecisionItem { Title = newMovie });
             newMovie = string.Empty;
         }
     }
+
+
     // Method for adding movies on "Enter"
     private void AddMovieOnEnter(KeyboardEventArgs e)
     {
@@ -40,10 +52,27 @@
         }
     }
 
-    // Method for removing movie from Movie
+    // Method for removing a movie from Movie
     private void RemoveMovie(string Title)
     {
         var itemToRemove = movies.Single(movie => movie.Title == Title);
         movies.Remove(itemToRemove);
+    }
+
+    // Method for choosing movie from Movie
+    private void ChooseMovie()
+    {
+        // Flag for checking if the list is empty
+        bool isEmpty = !movies.Any();
+
+        if (!isEmpty)
+        {
+            int index = rnd.Next(movies.Count);
+            chosenMovie = movies[index].Title;
+        } else
+        {
+            chosenMovie = "You need to add a movie first silly";
+        }
+
     }
 }
