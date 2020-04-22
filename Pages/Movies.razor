@@ -1,0 +1,49 @@
+﻿@page "/movies"
+<h3>Movies</h3>
+<!--iterate through and list movies list-->
+<ol>
+    @foreach (var movie in movies)
+    {
+    <li>
+        <!--<input @bind="movie.Title" />-->
+        <span>@movie.Title</span>
+        <button class="btn-remove" @onclick="(() => RemoveMovie(movie.Title))">x</button>
+    </li>
+    }
+</ol>
+<!--This lets you add an item to the list on "Enter"
+    and adds button so you can add item on button click-->
+<input class="input-josue" placeholder="e.g., The Room" @bind-value="newMovie" @bind-value:event="oninput" @onkeyup="AddMovieOnEnter" />
+<button class="btn-add" @onclick="AddMovie">Add movie</button>
+
+@code {
+    // Field to maintain the state of the list
+    public IList<DecisionItem> movies = new List<DecisionItem>();
+    // String to bind to text input
+    private string newMovie;
+
+    // Method for adding movies on click
+    private void AddMovie()
+    {
+        if (!string.IsNullOrWhiteSpace(newMovie))
+        {
+            movies.Add(new DecisionItem { Title = newMovie });
+            newMovie = string.Empty;
+        }
+    }
+    // Method for adding movies on "Enter"
+    private void AddMovieOnEnter(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            AddMovie();
+        }
+    }
+
+    // Method for removing movie from Movie
+    private void RemoveMovie(string Title)
+    {
+        var itemToRemove = movies.Single(movie => movie.Title == Title);
+        movies.Remove(itemToRemove);
+    }
+}
