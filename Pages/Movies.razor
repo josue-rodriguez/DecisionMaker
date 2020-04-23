@@ -1,33 +1,41 @@
 ﻿@page "/movies"
 <h3>Movies</h3>
-<!--iterate through and list movies list-->
-<ol>
-    @foreach (var movie in movies)
-    {
-    <li>
-        <!--<input @bind="movie.Title" />-->
-        <span>@movie.Title</span>
-        <button class="btn-remove" @onclick="(() => RemoveMovie(movie.Title))">x</button>
-    </li>
-    }
-</ol>
-<!--This lets you add an item to the list on "Enter"
-    and adds button so you can add item on button click-->
+<span style="font-size: 24px">@movies.ChosenActivity</span>
+<br />
+<button class="btn-choose" @onclick="(() => movies.MakeChoice())">Decide a Movie</button>
+<hr />
+
 <input class="input-josue" placeholder="e.g., The Room" @bind-value="newMovie" @bind-value:event="oninput" @onkeyup="AddMovieOnEnter" />
 <button class="btn-add" @onclick="AddMovie">Add movie</button>
 
+<!--iterate through and list movies list-->
+<ul>
+    @foreach (var movie in movies.Choices)
+    {
+        <li>
+            <!--<input @bind="movie.Title" />-->
+            <span>@movie</span>
+            <button class="btn-remove" @onclick="(() => movies.RemoveChoice(movie))">x</button>
+        </li>
+    }
+</ul>
+<!--This lets you add an item to the list on "Enter"
+    and adds button so you can add item on button click-->
+
+
+
+
+
 @code {
-    // Field to maintain the state of the list
-    public IList<DecisionItem> movies = new List<DecisionItem>();
-    // String to bind to text input
     private string newMovie;
+    public Activity movies = new Activity { Type = "Movies" };
 
     // Method for adding movies on click
     private void AddMovie()
     {
         if (!string.IsNullOrWhiteSpace(newMovie))
         {
-            movies.Add(new DecisionItem { Title = newMovie });
+            movies.AddChoice(newMovie);
             newMovie = string.Empty;
         }
     }
@@ -38,12 +46,5 @@
         {
             AddMovie();
         }
-    }
-
-    // Method for removing movie from Movie
-    private void RemoveMovie(string Title)
-    {
-        var itemToRemove = movies.Single(movie => movie.Title == Title);
-        movies.Remove(itemToRemove);
     }
 }

@@ -353,6 +353,6 @@ C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\DecisionMaker.dll
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\DecisionMaker.pdb
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\RazorDeclaration\Pages\ActivityChooser.razor.g.cs
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\Razor\Pages\ActivityChooser.razor.g.cs
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\6kLyaGh-z2VOiNq6L4dPEEtDYY2JKwEkqb8TSbyq8Zc=.hash
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\pCfRaZVaDFm_nFUL6lu44vPp29hX6EQCMaOMQJneDXk=.hash
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\lQoaPWUKlxA4P2IXZGHK_JYs2UwvMkCc6FxzfxnHi4k=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\HHFpNg9LyJCGS9vjj3BX7e0mOZUM4z05KN5Phw6n7OY=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\HbY8F6Y-2wXTTmPK9gvO9mMYBs9jXseog3ZfHBFNJMk=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\mNkbTvQAC6z9PB3LAR2FgQSapIy8d5jqGpng_gqQ7h8=.hash
