@@ -361,6 +361,6 @@ C:\Users\josue\GitHub\DecisionMaker\bin\Debug\netstandard2.1\wwwroot\_framework\
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\fWwjvztyZqVR47Lr3GGvh2S5TrD635IoiUP2hUI4AVg=.hash
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\compressed\_framework\_bin\Blazored.LocalStorage.dll.gz
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\compressed\_framework\_bin\Blazored.LocalStorage.dll.br
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\RU5Qij3IUUm3v2uvrawPSuD1BAcbb_bu4xq1NNvpPtY=.hash
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\0lKJkPon5Kn7_cLQjI9XAsGsrPWxbaJMJxIghJU0l-4=.hash
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\4KEbVZpYBYBLVC0jBYMIz0sHGkjlVzvn_ztVzXsW2rQ=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\tJNLeUUkDNLNdy1ibgTWWJZquS7GCMou7KQsKYdqQZE=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\uBxbM-ZL0Q55_nyhltYgTdvR7SezxNbwLI5RT7qeLeY=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\zm4P2IwABth5DL0-QzA9IZasBCrjjdvoeTWPd_zxE2A=.hash

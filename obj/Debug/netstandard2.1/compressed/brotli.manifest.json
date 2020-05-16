@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\RU5Qij3IUUm3v2uvrawPSuD1BAcbb_bu4xq1NNvpPtY=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\tJNLeUUkDNLNdy1ibgTWWJZquS7GCMou7KQsKYdqQZE=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\DecisionMaker.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/DecisionMaker.dll.br"
     },
@@ -161,16 +161,6 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\fWwjvztyZqVR47Lr3GGvh2S5TrD635IoiUP2hUI4AVg=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.LocalStorage.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.LocalStorage.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\K3dpli228kQQ75WVqoiIdmn8u8q8gZHixcWDdCHCRgU=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.br"
-    },
-    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\v4LhihP26fP-dVajppSCZIrCVbkiALCJgAisyG2cmJQ=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Web.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.br"
@@ -199,6 +189,16 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\45ia6XmGIa5WI3cHUIE9KhVornlZleYW_B5FPpfD1wQ=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Logging.Abstractions.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\fWwjvztyZqVR47Lr3GGvh2S5TrD635IoiUP2hUI4AVg=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.LocalStorage.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.LocalStorage.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\K3dpli228kQQ75WVqoiIdmn8u8q8gZHixcWDdCHCRgU=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.br"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\oZtVKBjmqOsIlSUbydq1eeob6CSHoYyTDksteqmu2hE=.hash",
@@ -266,7 +266,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\0lKJkPon5Kn7_cLQjI9XAsGsrPWxbaJMJxIghJU0l-4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\uBxbM-ZL0Q55_nyhltYgTdvR7SezxNbwLI5RT7qeLeY=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\DecisionMaker.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/DecisionMaker.pdb.br"
     },
@@ -286,7 +286,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\4KEbVZpYBYBLVC0jBYMIz0sHGkjlVzvn_ztVzXsW2rQ=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\zm4P2IwABth5DL0-QzA9IZasBCrjjdvoeTWPd_zxE2A=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

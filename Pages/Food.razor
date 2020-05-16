@@ -1,4 +1,6 @@
-﻿@page "/food"
+﻿@inject Blazored.LocalStorage.ILocalStorageService LocalStore
+@page "/food"
+
 <h3>Food</h3>
 <span style="font-size: 24px">@foods.ChosenActivity</span>
 <br />
@@ -31,7 +33,7 @@
     public Activity foods = new Activity { Type = "Food" };
 
     // Method for adding foods on click
-    private void AddFood()
+    public async void AddFood()
     {
         if (!string.IsNullOrWhiteSpace(newFood))
         {
@@ -46,5 +48,6 @@
         {
             AddFood();
         }
+
     }
 }
