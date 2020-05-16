@@ -1,0 +1,9 @@
+﻿.btn {
+    border-radius: 3px;
+}
+
+.btn-large {
+    padding: 20px 30px;
+    font-size: 22px;
+    @extend .btn;
+}

@@ -65,6 +65,13 @@ using DecisionMaker.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "C:\Users\josue\GitHub\DecisionMaker\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/movies")]
     public partial class Movies : Microsoft.AspNetCore.Components.ComponentBase
     {

@@ -1,0 +1,50 @@
+﻿@page "/food"
+<h3>Food</h3>
+<span style="font-size: 24px">@foods.ChosenActivity</span>
+<br />
+<button class="btn-choose" @onclick="(() => foods.MakeChoice())">Decide a Place to Eat</button>
+<hr />
+
+<input class="input-josue" placeholder="e.g., de Vere's Irish Pub" @bind-value="newFood" @bind-value:event="oninput" @onkeyup="AddFoodOnEnter" />
+<button class="btn-add" @onclick="AddFood">Add restaurant</button>
+
+<!--iterate through and list foods list-->
+<ul>
+    @foreach (var food in foods.Choices)
+    {
+        <li>
+            <!--<input @bind="food.Title" />-->
+            <span>@food</span>
+            <button class="btn-remove" @onclick="(() => foods.RemoveChoice(food))">x</button>
+        </li>
+    }
+</ul>
+<!--This lets you add an item to the list on "Enter"
+    and adds button so you can add item on button click-->
+
+
+
+
+
+@code {
+    private string newFood;
+    public Activity foods = new Activity { Type = "Food" };
+
+    // Method for adding foods on click
+    private void AddFood()
+    {
+        if (!string.IsNullOrWhiteSpace(newFood))
+        {
+            foods.AddChoice(newFood);
+            newFood = string.Empty;
+        }
+    }
+    // Method for adding foods on "Enter"
+    private void AddFoodOnEnter(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            AddFood();
+        }
+    }
+}

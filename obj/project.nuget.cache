@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nU7kdGgMuJXFaBPTGRMpGHKXUPdzAXn2A2YqZV9tVqzGWdevcVes4eo5G2HQQpgsF39vReGUq14GG/l2Sy4aBQ==",
+  "dgSpecHash": "gt7qKqfl+U5L0wihykjFzvFnxnvKM1lw2wMP3JogI1NMEqIIInjAbm3vnaygGtLgqAJzNk3pmP/6J5i4LTsWQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\josue\\GitHub\\DecisionMaker\\DecisionMaker.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\josue\\.nuget\\packages\\blazored.localstorage\\2.1.5\\blazored.localstorage.2.1.5.nupkg.sha512",
     "C:\\Users\\josue\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.3\\microsoft.aspnetcore.authorization.3.1.3.nupkg.sha512",
     "C:\\Users\\josue\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.3\\microsoft.aspnetcore.components.3.1.3.nupkg.sha512",
     "C:\\Users\\josue\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.3\\microsoft.aspnetcore.components.analyzers.3.1.3.nupkg.sha512",
