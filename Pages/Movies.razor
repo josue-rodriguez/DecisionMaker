@@ -1,50 +1,98 @@
 ﻿@page "/movies"
+@inject Blazored.LocalStorage.ILocalStorageService LocalStore
+
+
 <h3>Movies</h3>
-<span style="font-size: 24px">@movies.ChosenActivity</span>
+
+<span style="font-size: 24px">@movies.Decision</span>
+
 <br />
-<button class="btn-choose" @onclick="(() => movies.MakeChoice())">Decide a Movie</button>
+
+<button class="btn-choose" @onclick="(() => movies.MakeDecision())">Decide a Movie</button>
+
 <hr />
 
-<input class="input-josue" placeholder="e.g., The Room" @bind-value="newMovie" @bind-value:event="oninput" @onkeyup="AddMovieOnEnter" />
-<button class="btn-add" @onclick="AddMovie">Add movie</button>
+<input class="input-josue" placeholder="e.g., The Room" @bind-value="NewChoice" @bind-value:event="oninput" @onkeyup="AddChoiceOnEnter" />
+<button class="btn-add" @onclick="AddChoiceToChoices">Add movie</button>
+<button class="btn-choose" @onclick="ClearLocalStorage">Clear All</button>
 
-<!--iterate through and list movies list-->
-<ul>
-    @foreach (var movie in movies.Choices)
-    {
-        <li>
-            <!--<input @bind="movie.Title" />-->
-            <span>@movie</span>
-            <button class="btn-remove" @onclick="(() => movies.RemoveChoice(movie))">x</button>
-        </li>
-    }
-</ul>
-<!--This lets you add an item to the list on "Enter"
-    and adds button so you can add item on button click-->
-
-
-
-
+    <ul>
+        @foreach (var choice in movies.Items)
+        {
+            <li>
+                <span>@choice.Name</span>
+                <button class="btn-remove" @onclick="(() => RemoveChoice(choice.Name))">x</button>
+            </li>
+        }
+    </ul>
 
 @code {
-    private string newMovie;
-    public Activity movies = new Activity { Type = "Movies" };
+    public Activity2 movies = new Activity2 { };
+    private string NewChoice;
+    const string Key = "MovieList";
 
-    // Method for adding movies on click
-    private void AddMovie()
+    // Add Choice to movies
+    // Reload items on return
+    protected override async Task OnInitializedAsync()
     {
-        if (!string.IsNullOrWhiteSpace(newMovie))
+        movies = await LocalStore.GetItemAsync<Activity2>(Key);
+
+        if (movies == null || movies.Items.Count == 0)
         {
-            movies.AddChoice(newMovie);
-            newMovie = string.Empty;
+            movies = new Activity2 { };
         }
+
     }
-    // Method for adding movies on "Enter"
-    private void AddMovieOnEnter(KeyboardEventArgs e)
+
+    public async void UpdateLocalStorage()
+    {
+        await LocalStore.SetItemAsync(Key, movies);
+    }
+
+    public async void ClearLocalStorage()
+    {
+        movies.Items.Clear();
+        await LocalStore.ClearAsync();
+    }
+
+    public void AddChoiceToChoices()
+
+    {
+        bool isNotEmpty = !string.IsNullOrWhiteSpace(NewChoice);
+        bool isNewChoice = !movies.Items.Any(choice => choice.Name == NewChoice);
+
+        if (isNotEmpty && isNewChoice)
+        {
+            var item = new Choice2 { Name = NewChoice };
+
+
+            movies.Items.Add(item);
+
+            NewChoice = string.Empty;
+
+            UpdateLocalStorage();
+        }
+
+    }
+
+    // Method for adding choices on "Enter"
+    public void AddChoiceOnEnter(KeyboardEventArgs e)
     {
         if (e.Key == "Enter")
         {
-            AddMovie();
+            AddChoiceToChoices();
         }
     }
+
+
+    // Method for removing a choice
+    public void RemoveChoice(string ChoiceToRemove)
+    {
+        var ItemToRemove = movies.Items.Single(choice => choice.Name == ChoiceToRemove);
+        movies.Items.Remove(ItemToRemove);
+        UpdateLocalStorage();
+    }
+
+
+
 }

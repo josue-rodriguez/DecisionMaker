@@ -151,7 +151,6 @@ C:\Users\josue\GitHub\DecisionMaker\bin\Debug\netstandard2.1\System.Threading.Ta
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\DecisionMaker.csprojAssemblyReference.cache
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\DecisionMaker.RazorComponent.input.cache
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\RazorDeclaration\App.razor.g.cs
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Counter.razor.g.cs
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\RazorDeclaration\Pages\FetchData.razor.g.cs
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Movies.razor.g.cs
@@ -347,7 +346,6 @@ C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\DecisionMaker.TagHe
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\DecisionMaker.RazorCoreGenerate.cache
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\Razor\App.razor.g.cs
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\Razor\Pages\ActivityChooser.razor.g.cs
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\Razor\Pages\Counter.razor.g.cs
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\Razor\Pages\FetchData.razor.g.cs
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\Razor\Pages\Food.razor.g.cs
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\Razor\Pages\Index.razor.g.cs
@@ -361,6 +359,6 @@ C:\Users\josue\GitHub\DecisionMaker\bin\Debug\netstandard2.1\wwwroot\_framework\
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\fWwjvztyZqVR47Lr3GGvh2S5TrD635IoiUP2hUI4AVg=.hash
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\compressed\_framework\_bin\Blazored.LocalStorage.dll.gz
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\compressed\_framework\_bin\Blazored.LocalStorage.dll.br
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\tJNLeUUkDNLNdy1ibgTWWJZquS7GCMou7KQsKYdqQZE=.hash
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\uBxbM-ZL0Q55_nyhltYgTdvR7SezxNbwLI5RT7qeLeY=.hash
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\zm4P2IwABth5DL0-QzA9IZasBCrjjdvoeTWPd_zxE2A=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\KbvBpWxoAY4uBvIEh3P-RLzRZJ4R4Du7sagnu0MmqL0=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\1WuY1LFY26iyNrAzbj6EYeSTw6E0-5npWiHOH_qpN1E=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\OzaorLbcnHhq1Zxl8DsSIemsJnAgie8cuFjoKENojAA=.hash

@@ -1,53 +1,96 @@
-﻿@inject Blazored.LocalStorage.ILocalStorageService LocalStore
-@page "/food"
+﻿@page "/food"
+@inject Blazored.LocalStorage.ILocalStorageService LocalStore
 
-<h3>Food</h3>
-<span style="font-size: 24px">@foods.ChosenActivity</span>
+
+<h3>foods</h3>
+
+<span style="font-size: 24px">@foods.Decision</span>
+
 <br />
-<button class="btn-choose" @onclick="(() => foods.MakeChoice())">Decide a Place to Eat</button>
+
+<button class="btn-choose" @onclick="(() => foods.MakeDecision())">Decide a Restaurant</button>
+
 <hr />
 
-<input class="input-josue" placeholder="e.g., de Vere's Irish Pub" @bind-value="newFood" @bind-value:event="oninput" @onkeyup="AddFoodOnEnter" />
-<button class="btn-add" @onclick="AddFood">Add restaurant</button>
+<input class="input-josue" placeholder="e.g., de Vere's Irish Pub" @bind-value="NewChoice" @bind-value:event="oninput" @onkeyup="AddChoiceOnEnter" />
+<button class="btn-add" @onclick="AddChoiceToChoices">Add Food</button>
+<button class="btn-choose" @onclick="ClearLocalStorage">Clear All</button>
 
-<!--iterate through and list foods list-->
 <ul>
-    @foreach (var food in foods.Choices)
+    @foreach (var choice in foods.Items)
     {
         <li>
-            <!--<input @bind="food.Title" />-->
-            <span>@food</span>
-            <button class="btn-remove" @onclick="(() => foods.RemoveChoice(food))">x</button>
+            <span>@choice.Name</span>
+            <button class="btn-remove" @onclick="(() => RemoveChoice(choice.Name))">x</button>
         </li>
     }
 </ul>
-<!--This lets you add an item to the list on "Enter"
-    and adds button so you can add item on button click-->
-
-
-
-
 
 @code {
-    private string newFood;
-    public Activity foods = new Activity { Type = "Food" };
+    public Activity2 foods = new Activity2 { };
+    private string NewChoice;
+    const string Key = "FoodList";
 
-    // Method for adding foods on click
-    public async void AddFood()
+    // Add Choice to foods
+    // Reload items on return
+    protected override async Task OnInitializedAsync()
     {
-        if (!string.IsNullOrWhiteSpace(newFood))
+        foods = await LocalStore.GetItemAsync<Activity2>(Key);
+
+        if (foods == null || foods.Items.Count == 0)
         {
-            foods.AddChoice(newFood);
-            newFood = string.Empty;
+            foods = new Activity2 { };
         }
+
     }
-    // Method for adding foods on "Enter"
-    private void AddFoodOnEnter(KeyboardEventArgs e)
+
+    public async void UpdateLocalStorage()
+    {
+        await LocalStore.SetItemAsync(Key, foods);
+    }
+
+    public async void ClearLocalStorage()
+    {
+        foods.Items.Clear();
+        await LocalStore.ClearAsync();
+    }
+
+    public void AddChoiceToChoices()
+
+    {
+        bool isNotEmpty = !string.IsNullOrWhiteSpace(NewChoice);
+        bool isNewChoice = !foods.Items.Any(choice => choice.Name == NewChoice);
+
+        if (isNotEmpty && isNewChoice)
+        {
+            var item = new Choice2 { Name = NewChoice };
+
+
+            foods.Items.Add(item);
+
+            NewChoice = string.Empty;
+
+            UpdateLocalStorage();
+        }
+
+    }
+
+    // Method for adding choices on "Enter"
+    public void AddChoiceOnEnter(KeyboardEventArgs e)
     {
         if (e.Key == "Enter")
         {
-            AddFood();
+            AddChoiceToChoices();
         }
-
     }
+
+
+    // Method for removing a choice
+    public void RemoveChoice(string ChoiceToRemove)
+    {
+        var ItemToRemove = foods.Items.Single(choice => choice.Name == ChoiceToRemove);
+        foods.Items.Remove(ItemToRemove);
+        UpdateLocalStorage();
+    }
+
 }

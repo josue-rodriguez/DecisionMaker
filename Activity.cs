@@ -48,4 +48,33 @@ namespace DecisionMaker
             }
         }
     }
+
+    public class Choice2
+    {
+        public string Name { get; set; }
+    }
+
+
+    public class Activity2
+    {
+        static readonly Random random = new Random();
+
+        public string Decision;
+
+        public List<Choice2> Items { get; set; } = new List<Choice2>();
+
+        //Make a decision
+        public void MakeDecision()
+        {
+            bool isNotEmpty = Items.Any();
+            if (isNotEmpty)
+            {
+                int index = random.Next(Items.Count);
+                Decision = Items[index].Name;
+            } else
+            {
+                Decision = string.Empty;
+            }
+        }
+    }
 }

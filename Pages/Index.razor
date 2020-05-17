@@ -1,40 +1,6 @@
-﻿@inject Blazored.LocalStorage.ILocalStorageService LocalStore
-@page "/"
+﻿@page "/"
 
 
-@*<h1>Hello Josue and/or Shea!</h1>
+<h1>Hello Josue and/or Shea,</h1>
+<h2>What kind of decision can I make for you today?</h2>
 <hr />
-<h2>You are here because you are incompetent at making decisions</h2>
-<br />
-<h2>What kind of decision can I make for you today?</h2>*@
-
-<hr />
-<hr />
-<h1>Your LocalStorage Note</h1>
-
-<textarea @bind="noteContent" />
-<br />
-<button @onclick="UpdateLocalStorage">Save</button>
-<button @onclick="ClearLocalStorage">Clear</button>
-
-
-@code{
-    const string noteKey = "note";
-    string noteContent;
-
-    public async void UpdateLocalStorage()
-    {
-        await LocalStore.SetItemAsync(noteKey, noteContent);
-    }
-
-    public async void ClearLocalStorage()
-    {
-        noteContent = "";
-        await LocalStore.ClearAsync();
-    }
-
-    protected override async Task OnInitializedAsync()
-    {
-        noteContent = await LocalStore.GetItemAsync<string>(noteKey);
-    }
-}
