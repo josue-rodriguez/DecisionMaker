@@ -69,6 +69,13 @@ using DecisionMaker.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 9 "C:\Users\josue\GitHub\DecisionMaker\_Imports.razor"
+using Blazored.LocalStorage;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/fetchdata")]
     public partial class FetchData : Microsoft.AspNetCore.Components.ComponentBase
     {

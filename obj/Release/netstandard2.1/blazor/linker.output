@@ -1,3 +1,4 @@
+obj\Release\netstandard2.1\blazor\linker\Blazored.LocalStorage.dll
 obj\Release\netstandard2.1\blazor\linker\DecisionMaker.dll
 obj\Release\netstandard2.1\blazor\linker\Microsoft.AspNetCore.Components.dll
 obj\Release\netstandard2.1\blazor\linker\Microsoft.AspNetCore.Components.Web.dll
