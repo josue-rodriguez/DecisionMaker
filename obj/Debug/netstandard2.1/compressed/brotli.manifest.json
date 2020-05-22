@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\KbvBpWxoAY4uBvIEh3P-RLzRZJ4R4Du7sagnu0MmqL0=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LVxI6Ayk8gzeibjZSpB72V3-QeAS6FXKQHzj1olCXZc=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\DecisionMaker.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/DecisionMaker.dll.br"
     },
@@ -266,7 +266,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\1WuY1LFY26iyNrAzbj6EYeSTw6E0-5npWiHOH_qpN1E=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\r1ujyco82ayNZoh2oqNo5zEGXlimG2DbybmCed5IgOk=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\DecisionMaker.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/DecisionMaker.pdb.br"
     },
@@ -286,7 +286,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\OzaorLbcnHhq1Zxl8DsSIemsJnAgie8cuFjoKENojAA=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LvsnLhgW_HTDF_wC71YT2vBb0rdZlins3nwKGvNaM0U=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

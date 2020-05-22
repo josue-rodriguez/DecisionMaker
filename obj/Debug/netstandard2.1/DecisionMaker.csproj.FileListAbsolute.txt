@@ -359,6 +359,8 @@ C:\Users\josue\GitHub\DecisionMaker\bin\Debug\netstandard2.1\wwwroot\_framework\
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\fWwjvztyZqVR47Lr3GGvh2S5TrD635IoiUP2hUI4AVg=.hash
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\compressed\_framework\_bin\Blazored.LocalStorage.dll.gz
 C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\compressed\_framework\_bin\Blazored.LocalStorage.dll.br
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\KbvBpWxoAY4uBvIEh3P-RLzRZJ4R4Du7sagnu0MmqL0=.hash
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\1WuY1LFY26iyNrAzbj6EYeSTw6E0-5npWiHOH_qpN1E=.hash
-C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\OzaorLbcnHhq1Zxl8DsSIemsJnAgie8cuFjoKENojAA=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Television.razor.g.cs
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\Razor\Pages\Television.razor.g.cs
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\LVxI6Ayk8gzeibjZSpB72V3-QeAS6FXKQHzj1olCXZc=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\r1ujyco82ayNZoh2oqNo5zEGXlimG2DbybmCed5IgOk=.hash
+C:\Users\josue\GitHub\DecisionMaker\obj\Debug\netstandard2.1\integrity\LvsnLhgW_HTDF_wC71YT2vBb0rdZlins3nwKGvNaM0U=.hash

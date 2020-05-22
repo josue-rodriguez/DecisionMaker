@@ -1,23 +1,23 @@
-﻿@page "/food"
+﻿@page "/television"
 @inject Blazored.LocalStorage.ILocalStorageService LocalStore
 
 
-<h3>Foods</h3>
+<h3>TV Shows</h3>
 
-<span style="font-size: 24px">@foods.Decision</span>
+<span style="font-size: 24px">@TV.Decision</span>
 
 <br />
 
-<button class="btn-choose" @onclick="(() => foods.MakeDecision())">Decide a Restaurant</button>
+<button class="btn-choose" @onclick="(() => TV.MakeDecision())">Decide a TV Show</button>
 
 <hr />
 
-<input class="input-josue" placeholder="e.g., de Vere's Irish Pub" @bind-value="NewChoice" @bind-value:event="oninput" @onkeyup="AddChoiceOnEnter" />
-<button class="btn-add" @onclick="AddChoiceToChoices">Add Food</button>
+<input class="input-josue" placeholder="e.g., Silicon Valley" @bind-value="NewChoice" @bind-value:event="oninput" @onkeyup="AddChoiceOnEnter" />
+<button class="btn-add" @onclick="AddChoiceToChoices">Add Show</button>
 <button class="btn-choose" @onclick="ClearLocalStorage">Clear All</button>
 
 <ul>
-    @foreach (var choice in foods.Items)
+    @foreach (var choice in TV.Items)
     {
         <li>
             <span>@choice.Name</span>
@@ -27,31 +27,31 @@
 </ul>
 
 @code {
-    public Activity foods = new Activity { };
+    public Activity TV = new Activity { };
     private string NewChoice;
-    const string Key = "FoodList";
+    const string Key = "TVList";
 
-    // Add Choice to foods
+    // Add Choice to TV
     // Reload items on return
     protected override async Task OnInitializedAsync()
     {
-        foods = await LocalStore.GetItemAsync<Activity>(Key);
+        TV = await LocalStore.GetItemAsync<Activity>(Key);
 
-        if (foods == null || foods.Items.Count == 0)
+        if (TV == null || TV.Items.Count == 0)
         {
-            foods = new Activity { };
+            TV = new Activity { };
         }
 
     }
 
     public async void UpdateLocalStorage()
     {
-        await LocalStore.SetItemAsync(Key, foods);
+        await LocalStore.SetItemAsync(Key, TV);
     }
 
     public async void ClearLocalStorage()
     {
-        foods.Items.Clear();
+        TV.Items.Clear();
         await LocalStore.ClearAsync();
     }
 
@@ -59,14 +59,14 @@
 
     {
         bool isNotEmpty = !string.IsNullOrWhiteSpace(NewChoice);
-        bool isNewChoice = !foods.Items.Any(choice => choice.Name == NewChoice);
+        bool isNewChoice = !TV.Items.Any(choice => choice.Name == NewChoice);
 
         if (isNotEmpty && isNewChoice)
         {
             var item = new Choice { Name = NewChoice };
 
 
-            foods.Items.Add(item);
+            TV.Items.Add(item);
 
             NewChoice = string.Empty;
 
@@ -88,8 +88,8 @@
     // Method for removing a choice
     public void RemoveChoice(string ChoiceToRemove)
     {
-        var ItemToRemove = foods.Items.Single(choice => choice.Name == ChoiceToRemove);
-        foods.Items.Remove(ItemToRemove);
+        var ItemToRemove = TV.Items.Single(choice => choice.Name == ChoiceToRemove);
+        TV.Items.Remove(ItemToRemove);
         UpdateLocalStorage();
     }
 

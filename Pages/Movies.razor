@@ -27,34 +27,36 @@
     </ul>
 
 @code {
-    public Activity2 movies = new Activity2 { };
+    public Activity movies = new Activity { };
     private string NewChoice;
     const string Key = "MovieList";
 
-    // Add Choice to movies
-    // Reload items on return
+    // Reload items on return, or initiate new list if empty
     protected override async Task OnInitializedAsync()
     {
-        movies = await LocalStore.GetItemAsync<Activity2>(Key);
+        movies = await LocalStore.GetItemAsync<Activity>(Key);
 
         if (movies == null || movies.Items.Count == 0)
         {
-            movies = new Activity2 { };
+            movies = new Activity { };
         }
 
     }
 
+    // Method to save list to local storage
     public async void UpdateLocalStorage()
     {
         await LocalStore.SetItemAsync(Key, movies);
     }
 
+    // Method to clear local storage
     public async void ClearLocalStorage()
     {
         movies.Items.Clear();
         await LocalStore.ClearAsync();
     }
 
+    // Method for adding option to choices
     public void AddChoiceToChoices()
 
     {
@@ -63,7 +65,7 @@
 
         if (isNotEmpty && isNewChoice)
         {
-            var item = new Choice2 { Name = NewChoice };
+            var item = new Choice { Name = NewChoice };
 
 
             movies.Items.Add(item);
@@ -84,7 +86,6 @@
         }
     }
 
-
     // Method for removing a choice
     public void RemoveChoice(string ChoiceToRemove)
     {
@@ -92,7 +93,4 @@
         movies.Items.Remove(ItemToRemove);
         UpdateLocalStorage();
     }
-
-
-
 }
