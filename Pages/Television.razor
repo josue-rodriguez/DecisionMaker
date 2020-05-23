@@ -1,9 +1,11 @@
 ﻿@page "/television"
 @inject Blazored.LocalStorage.ILocalStorageService LocalStore
-
+@inject Activity TV 
 
 <h3>TV Shows</h3>
 
+
+<br />
 <span style="font-size: 24px">@TV.Decision</span>
 
 <br />
@@ -27,7 +29,7 @@
 </ul>
 
 @code {
-    public Activity TV = new Activity { };
+    //public Activity TV = new Activity { };
     private string NewChoice;
     const string Key = "TVList";
 

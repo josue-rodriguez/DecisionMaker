@@ -18,10 +18,17 @@ namespace DecisionMaker
             builder.RootComponents.Add<App>("app");
 
             builder.Services.AddSingleton(new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+
+            // !! ---Register activity to share between pages----- !!
+            builder.Services.AddSingleton<Activity>();
+            
             // Add local storage
             builder.Services.AddBlazoredLocalStorage(); 
-
             await builder.Build().RunAsync();
+
+
+           
+
         }
     }
 }

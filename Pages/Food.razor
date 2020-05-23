@@ -1,14 +1,15 @@
 ﻿@page "/food"
 @inject Blazored.LocalStorage.ILocalStorageService LocalStore
+@inject Activity foods 
 
 
 <h3>Foods</h3>
 
-<span style="font-size: 24px">@foods.Decision</span>
+@*<span style="font-size: 24px">@foods.Decision</span>*@
 
 <br />
 
-<button class="btn-choose" @onclick="(() => foods.MakeDecision())">Decide a Restaurant</button>
+@*<button class="btn-choose" @onclick="(() => foods.MakeDecision())">Decide a Restaurant</button>*@
 
 <hr />
 
@@ -27,7 +28,7 @@
 </ul>
 
 @code {
-    public Activity foods = new Activity { };
+   // public Activity foods = new Activity { };
     private string NewChoice;
     const string Key = "FoodList";
 

@@ -1,49 +1,14 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LVxI6Ayk8gzeibjZSpB72V3-QeAS6FXKQHzj1olCXZc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Ki4XoiQs_fHGGgJ9awSa8vQKfyW08bnoHu9VQcXAbH0=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\DecisionMaker.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/DecisionMaker.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\mfk4mGJNEuOK1ya6HNucfAmophVZxc_JZZGUjS6Ch2g=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Net.Http.Json.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.Json.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Buffers.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Buffers.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-wH_cZ4GWv76l2ip-cTl2COsQjLmNljfkZi4H9zaHBc=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\mscorlib.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Threading.Tasks.Extensions.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Threading.Tasks.Extensions.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-cPXlNTX8GKF-lIn-2DIjtxTe0Wpy4ZDcyAj67b6JYk=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Memory.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Memory.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\pzCorxTCjbUODF5JuRgcHc8gVYEdSaKD9NWA6wZhTPE=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Json.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\vK9IBBJl1fs_hinlQUxpPvkGV7en5XJ2SryYwtkHoK0=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Runtime.CompilerServices.Unsafe.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\OBWh2or_2mU6elwqPfmL72FBZVKl2WzTJ4L-IrKeXM4=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Bcl.AsyncInterfaces.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.br"
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ycn-UHLnjC77BNvsurP4mkuYP8oud1oVyfSSlZKMymc=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.br"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-zcPVM75OAY_joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=.hash",
@@ -69,6 +34,16 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\yS3l7u0qntYAf5HbpUdiiP4T70sURSXuYBh_FQvFLPg=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\WebAssembly.Net.WebSockets.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/WebAssembly.Net.WebSockets.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-cPXlNTX8GKF-lIn-2DIjtxTe0Wpy4ZDcyAj67b6JYk=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Memory.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Memory.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\-wH_cZ4GWv76l2ip-cTl2COsQjLmNljfkZi4H9zaHBc=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\mscorlib.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.br"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\hrJbvTe-kcQUGysl2PEwwV_McMOXPTlZsZUJFO8O-zI=.hash",
@@ -146,21 +121,6 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Data.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6isumOmKraghJxnUrGbNhFd6Qxj09gTHFQ-0CAhEnZs=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Numerics.Vectors.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.Vectors.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\hbEA2pdvgll2bWeJXCtehEV3kl3WFnBgQj6ttcesEA4=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Encodings.Web.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.br"
-    },
-    {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ycn-UHLnjC77BNvsurP4mkuYP8oud1oVyfSSlZKMymc=.hash",
-      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.br"
-    },
-    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\v4LhihP26fP-dVajppSCZIrCVbkiALCJgAisyG2cmJQ=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.AspNetCore.Components.Web.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.br"
@@ -186,6 +146,11 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.br"
     },
     {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ZxXy75PYbzJxNfAc-SAP1nUYm4gt1jSaOpFnBb9m85M=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Buffers.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Buffers.dll.br"
+    },
+    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\45ia6XmGIa5WI3cHUIE9KhVornlZleYW_B5FPpfD1wQ=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Extensions.Logging.Abstractions.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.br"
@@ -194,6 +159,36 @@
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\fWwjvztyZqVR47Lr3GGvh2S5TrD635IoiUP2hUI4AVg=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.LocalStorage.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.LocalStorage.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\TkH6yxFQlTfY8NfznePrCdYJiEVpM9Dqy4Uu4H9qk10=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Threading.Tasks.Extensions.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Threading.Tasks.Extensions.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\pzCorxTCjbUODF5JuRgcHc8gVYEdSaKD9NWA6wZhTPE=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Json.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\vK9IBBJl1fs_hinlQUxpPvkGV7en5XJ2SryYwtkHoK0=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Runtime.CompilerServices.Unsafe.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\OBWh2or_2mU6elwqPfmL72FBZVKl2WzTJ4L-IrKeXM4=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.Bcl.AsyncInterfaces.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6isumOmKraghJxnUrGbNhFd6Qxj09gTHFQ-0CAhEnZs=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Numerics.Vectors.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.Vectors.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\hbEA2pdvgll2bWeJXCtehEV3kl3WFnBgQj6ttcesEA4=.hash",
+      "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\System.Text.Encodings.Web.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.br"
     },
     {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\K3dpli228kQQ75WVqoiIdmn8u8q8gZHixcWDdCHCRgU=.hash",
@@ -266,7 +261,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\r1ujyco82ayNZoh2oqNo5zEGXlimG2DbybmCed5IgOk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\5Z2HRrOkQ0NLZnVPKv5F6d1W9pKbHuBKAjKOaoeaN_E=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\DecisionMaker.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/DecisionMaker.pdb.br"
     },
@@ -286,7 +281,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LvsnLhgW_HTDF_wC71YT2vBb0rdZlins3nwKGvNaM0U=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\x5k_s8g9KGb6-8WFmgNW0Ay3RfT2Bd6aTzoEr_PcfhA=.hash",
       "Source": "C:\\Users\\josue\\GitHub\\DecisionMaker\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

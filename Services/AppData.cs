@@ -1,24 +1,21 @@
-﻿using DecisionMaker.Pages;
-using Microsoft.AspNetCore.Components.Web;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DecisionMaker
+namespace DecisionMaker.Services
 {
-    public class Choice
+    public class AppData
     {
-        public string Name { get; set; }
+        public int Age { get; set; }
     }
-
 
     public class Activity
     {
         static readonly Random random = new Random();
 
         public string Decision { get; set; }
-
+        public int Number { get; set; }
         public List<Choice> Items { get; set; } = new List<Choice>();
 
         //Make a decision
@@ -29,7 +26,8 @@ namespace DecisionMaker
             {
                 int index = random.Next(Items.Count);
                 Decision = Items[index].Name;
-            } else
+            }
+            else
             {
                 Decision = string.Empty;
             }

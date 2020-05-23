@@ -1,0 +1,29 @@
+@page "/TEST"
+@inject Blazored.LocalStorage.ILocalStorageService LocalStore
+
+<h1>First Page</h1>
+<input type="number" @bind="AppData.Age" />
+<button @onclick="UpdateLocalStorage">Update</button>
+<br>
+<a href="/">Go to Page 2</a>
+
+
+@code {
+    public Services.AppData AppData;
+    const string Key = "AppTest";
+    protected override async Task OnInitializedAsync()
+    {
+        AppData = await LocalStore.GetItemAsync<Services.AppData>(Key);
+
+        if (AppData == null)
+        {
+            AppData = new Services.AppData { };
+        }
+
+    }
+
+    public async void UpdateLocalStorage()
+    {
+        await LocalStore.SetItemAsync(Key, AppData);
+    }
+}

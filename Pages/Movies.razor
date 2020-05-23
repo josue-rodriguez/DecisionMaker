@@ -1,5 +1,6 @@
 ﻿@page "/movies"
 @inject Blazored.LocalStorage.ILocalStorageService LocalStore
+@inject Activity movies 
 
 
 <h3>Movies</h3>
@@ -27,7 +28,7 @@
     </ul>
 
 @code {
-    public Activity movies = new Activity { };
+    //public Activity movies = new Activity { };
     private string NewChoice;
     const string Key = "MovieList";
 

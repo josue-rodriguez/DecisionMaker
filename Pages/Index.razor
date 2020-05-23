@@ -1,6 +1,77 @@
 ﻿@page "/"
-
+@inject Blazored.LocalStorage.ILocalStorageService LocalStore
+@inject Activity TV
+@inject Activity movies 
+@inject Activity foods 
 
 <h1>Hello Josue and/or Shea,</h1>
 <h2>What kind of decision can I make for you today?</h2>
 <hr />
+
+<select id="select-activity" @bind="SelectedActivity" class="btn-choose">
+    <option value="" selected disabled hidden>Choose an activity...</option>
+    <option value="Movies">Movie</option>
+    <option value="TV">TV</option>
+    <option value="Food">Food</option>
+</select>
+
+<hr />
+
+<button class="btn-choose" @onclick="MakeDecision">Make a decision</button>
+<br />
+<p>@Decision</p>
+<br />
+
+
+
+@code{
+
+    public string SelectedActivity;
+    public string Decision;
+
+    // Load in saved data
+    protected override async Task OnInitializedAsync()
+    {
+        // --------- TV -----------
+        TV = await LocalStore.GetItemAsync<Activity>("TVList");
+        if (TV == null || TV.Items.Count == 0)
+        {
+            TV = new Activity { };
+        }
+
+        movies = await LocalStore.GetItemAsync<Activity>("MovieList");
+
+        if (movies == null || movies.Items.Count == 0)
+        {
+            movies = new Activity { };
+        }
+
+        foods = await LocalStore.GetItemAsync<Activity>("FoodList");
+
+        if (foods == null || foods.Items.Count == 0)
+        {
+            foods = new Activity { };
+        }
+
+    }
+
+    public void MakeDecision()
+    {
+        if (SelectedActivity == "Movies")
+        {
+            movies.MakeDecision();
+            Decision = movies.Decision;
+        }
+        else if (SelectedActivity == "TV")
+        {
+            TV.MakeDecision();
+            Decision = TV.Decision;
+        }
+        else if (SelectedActivity == "Food")
+        {
+            foods.MakeDecision();
+            Decision = foods.Decision;
+        }
+    }
+
+}
