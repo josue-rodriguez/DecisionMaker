@@ -6,15 +6,15 @@
 
 
 <br />
-@*<span style="font-size: 24px">@TV.Decision</span>
+<span style="font-size: 24px">@TV.Decision</span>
 
 <br />
 
-<button class="btn-choose" @onclick="(() => TV.MakeDecision())">Decide a TV Show</button>*@
+<button class="btn-choose" @onclick="(() => TV.MakeDecision())">Decide a TV Show</button>
 
 <hr />
 
-<input class="input-josue" placeholder="e.g., Silicon Valley" @bind-value="NewChoice" @bind-value:event="oninput" @onkeyup="AddChoiceOnEnter" />
+<input class="input-josue" placeholder="e.g., Silicon Valley" @bind-value="NewChoice" @bind-value:event="oninput" @onkeypress="AddChoiceOnEnter" />
 <button class="btn-add" @onclick="AddChoiceToChoices">Add Show</button>
 <button class="btn-choose" @onclick="ClearLocalStorage">Clear All</button>
 

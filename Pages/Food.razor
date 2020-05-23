@@ -5,15 +5,15 @@
 
 <h3>Foods</h3>
 
-@*<span style="font-size: 24px">@foods.Decision</span>*@
+<span style="font-size: 24px">@foods.Decision</span>
 
 <br />
 
-@*<button class="btn-choose" @onclick="(() => foods.MakeDecision())">Decide a Restaurant</button>*@
+<button class="btn-choose" @onclick="(() => foods.MakeDecision())">Decide a Restaurant</button>
 
 <hr />
 
-<input class="input-josue" placeholder="e.g., de Vere's Irish Pub" @bind-value="NewChoice" @bind-value:event="oninput" @onkeyup="AddChoiceOnEnter" />
+<input class="input-josue" placeholder="e.g., de Vere's Irish Pub" @bind-value="NewChoice" @bind-value:event="oninput" @onkeypress="AddChoiceOnEnter" />
 <button class="btn-add" @onclick="AddChoiceToChoices">Add Food</button>
 <button class="btn-choose" @onclick="ClearLocalStorage">Clear All</button>
 
